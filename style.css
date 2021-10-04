@@ -6,10 +6,12 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    /* cursor: none; */
 }
 
 img{
     width: 500px;
+    /* z-index: -3; */
 }
 
 nav{
@@ -30,6 +32,11 @@ nav{
 .nav-links a{
     text-decoration: none;
     color: black;
+    padding: 1rem; 
+}
+
+.nav-links a:hover{
+    color: white;
 }
 
 .nav-links, h1{
@@ -42,4 +49,137 @@ nav{
     border: 2px solid black;
     border-radius: 50%;
     position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(90%);
+}
+
+.link-grow{
+    transform: scale(2);
+    background: black;
+    z-index: -1;
+}
+
+.border-white{
+    border: 2px solid white;
+}
+
+section{
+    padding: 60px;
+}
+
+#presentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.front-description p {
+    font-size: 40px;
+}
+
+.generations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.generation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.generation p {
+    margin: 10px auto;
+}
+
+.slider img{
+    height: 300px;
+    object-fit: cover;
+   
+}
+.slide{
+    position: relative;
+}
+.slide p{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    color: white;
+}
+.change{
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.change button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.change img{
+    width: 30%;
+    position: relative;
+}
+.left{
+    top: 50%;
+    left: -20px;
+}
+
+.right{
+    top: 50%;
+    right: -20px;
+}
+.container-slider{
+    position: relative;
+    margin: 50px auto;
+    height: 300px;
+    width: 500px;
+}
+.slider{
+    height: 100%;
+    width: 100%;
+}
+.slide{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.circles{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cercle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 5px;
+}
+
+.active-cercle{
+    background: rgb(65, 62, 62);
+}
+
+.active{
+    opacity: 1;
 }

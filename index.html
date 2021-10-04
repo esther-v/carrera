@@ -14,19 +14,90 @@
     <div class="cursor"></div>
     <nav>
         <h1>carrera911</h1>
-        <ul class="nav-links">
-            <li><a href="#">Presentation</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Movies</a></li>
-        </ul>
+        <div class="nav-links">
+            <a href="#">Presentation</a>
+            <a href="#history">History</a>
+            <a href="https://www.youtube.com/watch?v=TpwpAYi-p2w&t=700s">Movies</a>
+        </div>
     </nav>
     <section id="presentation">
         <div class="front-cover">
-            <img src="pres.png" alt="carrera black">
+            <img src="https://images.unsplash.com/photo-1595522391226-2c07c13e7c3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="carrera black">
         </div>
         <div class="front-description">
+            <h2>Porsche Carrera 911</h2>
             <p>The timeless model</p>
         </div>
     </section>
+    <section id="history">
+        <h2>History</h2>
+        <h3>Seven Generations</h3>
+        <p>Born in 1963, the Porsche 911 has become a legend. It won the hearts of sports car enthusiasts from the outset. Let see the evolution : </p>
+        <div class="generations">
+            <div class="generation gen-1">
+                <img src="images/one.jpeg" alt="">
+                <p>The Original <br> 1963 - 1973</p>
+            </div>
+            <div class="generation gen-2">
+                <img src="images/two.jpeg" alt="">
+                <p>G-series <br> 1973 - 1989</p>
+            </div>
+            <div class="generation gen-3">
+                <img src="images/three.jpeg" alt="">
+                <p>Type 964 <br> 1988 - 1994</p>
+            </div>
+            <div class="generation gen-4">
+                <img src="images/four.jpeg" alt="">
+                <p>Type 993 <br> 1993 - 1998</p>
+            </div>
+            <div class="generation gen-5">
+                <img src="images/five.jpeg" alt="">
+                <p>Type 996 <br> 1998 - 2005</p>
+            </div>
+            <div class="generation gen-6">
+                <img src="images/six.jpeg" alt="">
+                <p>Type 997 <br> 2004 - 2012</p>
+            </div>
+            <div class="generation gen-7">
+                <img src="images/seven.jpeg" alt="">
+                <p>Type 991 <br>2011-2018</p>
+            </div>
+            <div class="generation last">
+                <img src="images/last.jpeg" alt="">
+                <p>Type 992 <br> Since 2018</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="movies">
+        <h2>The 911 in movies</h2>
+        <div class="container-slider">
+            <div class="slider">
+                <div class="slide s1 active">
+                    <img src="images/lemans.jpeg" alt="">
+                    <p>Le Mans (1971)</p>
+                </div>
+                <div class="slide s2">
+                    <img src="images/badboys.jpeg" alt="">
+                    <p>Bad Boys (1995)</p>
+                </div>
+                <div class="slide s3">
+                    <img src="images/fast.jpeg" alt="">
+                    <p>Fast & Furious 5 (2011)</p>
+                </div>
+            </div>
+            <div class="change">
+                <button class="left"><img src="images/left.svg" alt=""></button>
+                <button class="right"><img src="images/right.svg" alt=""></button>
+            </div>
+            <div class="circles">
+                <button data-clic="1" class="cercle active-cercle"></button>
+                <button data-clic="2" class="cercle"></button>
+                <button data-clic="3" class="cercle"></button>
+            </div>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
