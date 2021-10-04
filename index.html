@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="cursor"></div>
     <nav>
         <h1>carrera911</h1>
         <div class="nav-links">
-            <a href="#">Presentation</a>
+            <a href="#presentation">Presentation</a>
             <a href="#history">History</a>
-            <a href="https://www.youtube.com/watch?v=TpwpAYi-p2w&t=700s">Movies</a>
+            <a href="#movies">Movies</a>
         </div>
     </nav>
     <section id="presentation">
@@ -31,36 +31,38 @@
     </section>
     <section id="history">
         <h2>History</h2>
-        <h3>Seven Generations</h3>
-        <p>Born in 1963, the Porsche 911 has become a legend. It won the hearts of sports car enthusiasts from the outset. Let see the evolution : </p>
+        <hr>
+        <h3>Eight Generations</h3>
+        <div class="p"><p>Born in 1963, the Porsche 911 has become a legend. It won the hearts of sports car enthusiasts from the outset. Let's see the evolution : </p></div>
+        
         <div class="generations">
             <div class="generation gen-1">
-                <img src="images/one.jpeg" alt="">
-                <p>The Original <br> 1963 - 1973</p>
+                <img src="images/first.jpeg" alt="">
+                <p>The Original <br> <span>1963 - 1973</span> </p>
             </div>
             <div class="generation gen-2">
                 <img src="images/two.jpeg" alt="">
-                <p>G-series <br> 1973 - 1989</p>
+                <p>G-series <br> <span>1973 - 1989</span></p>
             </div>
             <div class="generation gen-3">
                 <img src="images/three.jpeg" alt="">
-                <p>Type 964 <br> 1988 - 1994</p>
+                <p>Type 964 <br> <span>1988 - 1994</span> </p>
             </div>
             <div class="generation gen-4">
                 <img src="images/four.jpeg" alt="">
-                <p>Type 993 <br> 1993 - 1998</p>
+                <p>Type 993 <br> <span>1993 - 1998</span> </p>
             </div>
             <div class="generation gen-5">
                 <img src="images/five.jpeg" alt="">
-                <p>Type 996 <br> 1998 - 2005</p>
+                <p>Type 996 <br> <span>1998 - 2005</span> </p>
             </div>
             <div class="generation gen-6">
                 <img src="images/six.jpeg" alt="">
-                <p>Type 997 <br> 2004 - 2012</p>
+                <p>Type 997 <br> <span>2004 - 2012</span> </p>
             </div>
             <div class="generation gen-7">
                 <img src="images/seven.jpeg" alt="">
-                <p>Type 991 <br>2011-2018</p>
+                <p>Type 991 <br> <span>2011-2018</span> </p>
             </div>
             <div class="generation last">
                 <img src="images/last.jpeg" alt="">
@@ -71,6 +73,7 @@
     
     <section id="movies">
         <h2>The 911 in movies</h2>
+        <hr>
         <div class="container-slider">
             <div class="slider">
                 <div class="slide s1 active">
@@ -85,6 +88,10 @@
                     <img src="images/fast.jpeg" alt="">
                     <p>Fast & Furious 5 (2011)</p>
                 </div>
+                <div class="slide s4">
+                    <img src="images/bridge.jpeg" alt="">
+                    <p>The Bridge (2017)</p>
+                </div>
             </div>
             <div class="change">
                 <button class="left"><img src="images/left.svg" alt=""></button>
@@ -94,10 +101,12 @@
                 <button data-clic="1" class="cercle active-cercle"></button>
                 <button data-clic="2" class="cercle"></button>
                 <button data-clic="3" class="cercle"></button>
+                <button data-clic="4" class="cercle"></button>
             </div>
         </div>
         
     </section>
+    
     <script src="script.js"></script>
 </body>
 </html>

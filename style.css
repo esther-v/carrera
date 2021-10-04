@@ -9,6 +9,15 @@ body{
     /* cursor: none; */
 }
 
+h1, h2, h3{
+    color: rgb(58, 58, 58);
+}
+
+h2:hover {
+    filter: blur(2px);
+}
+
+
 img{
     width: 500px;
     /* z-index: -3; */
@@ -71,6 +80,7 @@ section{
     padding: 60px;
 }
 
+/* --- presentation ---*/
 #presentation{
     display: flex;
     align-items: center;
@@ -81,6 +91,12 @@ section{
     font-size: 40px;
 }
 
+.front-cover img{
+    height: 600px;
+    object-fit: cover;
+}
+
+/* --- history ---*/
 .generations{
     display: flex;
     flex-wrap: wrap;
@@ -96,15 +112,59 @@ section{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+.generation img{
+    filter: saturate(25%);
+    transition: filter 0.5s ease-in-out;
+    height: 250px;
+    object-fit: cover;
+}
+.generation img:hover{
+    filter: none;
+    transition: all 0.5s ease-in-out;
+}
+
 .generation p {
     margin: 10px auto;
 }
+.generation p span{
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
+}
 
+#movies h2, #history h2,h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-weight: 200;
+}
+#history .p {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#history .p p{
+    width: 300px;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+hr{
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* --- movie slider ---*/
 .slider img{
     height: 300px;
     object-fit: cover;
-   
+    object-position: center;
 }
+
 .slide{
     position: relative;
 }
@@ -149,10 +209,12 @@ section{
     margin: 50px auto;
     height: 300px;
     width: 500px;
+    
 }
 .slider{
     height: 100%;
     width: 100%;
+    z-index: -20;
 }
 .slide{
     width: 100%;
@@ -160,6 +222,7 @@ section{
     position: absolute;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+    z-index: -20;
 }
 
 .circles{
