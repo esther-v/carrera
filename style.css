@@ -158,7 +158,12 @@ hr{
     margin: 20px auto;
 }
 
+
 /* --- movie slider ---*/
+
+#movies{
+    margin-bottom: 60px;
+}
 .slider img{
     height: 300px;
     object-fit: cover;
@@ -245,4 +250,14 @@ hr{
 
 .active{
     opacity: 1;
+}
+
+/* footer */
+footer{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(128, 126, 126);
+    color: white;
 }
