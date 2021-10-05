@@ -85,6 +85,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .front-description p {
@@ -123,14 +124,12 @@ section{
     transition: all 0.5s ease-in-out;
 }
 
-.generation p {
-    margin: 10px auto;
+.generation p:first-of-type {
+    margin: 5px auto 0;
 }
-.generation p span{
-    display: inline-block;
-    text-align: center;
-    font-weight: 600;
-    margin: 0 auto;
+.generation p:last-of-type {
+    margin: 0 auto 5px;
+    font-weight: bold;
 }
 
 #movies h2, #history h2,h3{
@@ -260,4 +259,44 @@ footer{
     justify-content: center;
     background: rgb(128, 126, 126);
     color: white;
+}
+
+/* media-queries */
+
+@media screen and (max-width: 880px){
+   .front-cover img{
+        width: 350px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 615px){
+    #presentation{
+        flex-direction: column;
+    }
+    .front-description p {
+        font-size: 28px;
+    }
+    .generation img{
+        width: 280px;
+        height: 170px;
+    }
+    .container-slider{
+        height: 180px;
+        width: 280px; 
+    }
+    .slider img{
+        height: 180px;
+        width: 280px;
+    }
+    .left, .right{
+        top: 40%;
+    }
+    .nav-links a{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 18px;
+    }
 }
